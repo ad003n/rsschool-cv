@@ -1,1 +1,1 @@
-# rsschool-cv [резюме](https://ad003n.github.io/rsschool-cv/cv)
+# rsschool-cv [Резюме](https://ad003n.github.io/rsschool-cv/)  
