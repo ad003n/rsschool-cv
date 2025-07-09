@@ -1,0 +1,43 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+   
+}
+
+.header{
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 10px;
+}
+.navigation{
+    padding: 5px 0;
+}
+.navigation-list{
+    text-align: center;
+}
+.navigation-link{
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navigation-item{
+    display: inline-block;
+    margin: 0 10 px;
+}
+.section{
+background-color: #fff;
+margin: 20px 10px;
+padding: 25px;
+border-radius: 10px;
+
+}
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}

@@ -3,8 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anastasiya Verbitskaya - CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item"><a href="#profile" class="navigation-link">Profile</a></li>
+                    <li class="navigation-item"><a href="#contacts" class="navigation-link">Contacts</a></li>
+                    <li class="navigation-item"><a href="#summary" class="navigation-link">Summary</a></li>
+                    <li class="navigation-item"><a href="#skills" class="navigation-link">Skills</a></li>
+                    <li class="navigation-item"><a href="#code" class="navigation-link">Code</a></li>
+                    <li class="navigation-item"><a href="#courses" class="navigation-link">Courses</a></li>
+                    <li class="navigation-item"><a href="#projects" class="navigation-link">Projects</a></li>
+                    <li class="navigation-item"><a href="#education" class="navigation-link">Education</a></li>
+                    <li class="navigation-item"><a href="#languages" class="navigation-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section id="profile" class="section profile-section">
+                <div class="profile-content">
+                    <h1 class="section-title main-title">Anastasiya Verbitskaya</h1>
+                    
+                </div>
+                <img src="https://i.pinimg.com/736x/96/e6/e7/96e6e710ec917c86b23ca754374db7e1.jpg" 
+                     alt="Anastasiya Verbitskaya" 
+                     class="profile-photo"
+                     width="250">
+            </section>
+
+            <section id="contacts" class="section">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <span class="contact-label">Email:</span>
+                        <a href="mailto:v.ad003.m@gmail.com" class="contact-link">v.ad003.m@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <span class="contact-label">GitHub:</span>
+                        <a href="https://github.com/ad003n" target="_blank" class="contact-link">github.com/ad003n</a>
+                    </li>
+                    <li class="contacts-item">
+                        <span class="contact-label">Telegram:</span>
+                        <span>@telegram_name</span>
+                    </li>
+                    <li class="contacts-item">
+                        <span class="contact-label">Discord:</span>
+                        <span>Anastasia (@ad003n)</span>
+                    </li>
+                    <li class="contacts-item">
+                        <span class="contact-label">Phone:</span>
+                        <span>+375 33 XXX-XX-XX</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="summary" class="section">
+                <h2 class="section-title">Summary</h2>
+                <p class="summary-text">
+                    Mathematics graduate with strong analytical skills transitioning to web development.
+                </p>
+                <h3 class="subtitle">Key strengths:</h3>
+                <ul class="strengths-list">
+                    <li class="strengths-item">Analytical thinking</li>
+                    <li class="strengths-item">Working with mathematical models</li>
+                    <li class="strengths-item">Persistence and attention to detail</li>
+                </ul>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="skill-title">Programming Languages</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">C++</li>
+                            <li class="skills-item">VHDL</li>
+                            <li class="skills-item">Assembler (8051)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-title">Design Systems</h3>
+                        <ul class="skills-list">
+                            <li class="skills-item">Cadence Virtuoso (schematic and layout design)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="code" class="section">
+                <h2 class="section-title">Code Example</h2>
+                <div class="code-description">
+                    <p><strong>Problem from Codewars:</strong> Sum of multiples of 3 or 5 below a given number</p>
+                    <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+                    <p>Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.</p>
+                </div>
+                <pre class="code-block"><code class="code">int solution(int number) {
+  if (number &lt; 0) return 0;
+  int sum = 0;
+  for (int i = 1; i &lt; number; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}</code></pre>
+            </section>
+
+            <section id="courses" class="section">
+                <h2 class="section-title">Courses</h2>
+                <ul class="courses-list">
+                    <li class="courses-item">RS School JavaScript/Frontend Course (2025) - now</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title">Projects</h2>
+                <div class="project">
+                    <h3 class="project-title">Map Route Planner</h3>
+                    <p class="project-description">
+                        Desktop application for working with maps that allows setting start and end points of a route, 
+                        generating intermediate markers, and manipulating markers.
+                    </p>
+                    <a href="https://github.com/ad003n/Map.project" 
+                       target="_blank" 
+                       class="project-link">View Project on GitHub</a>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3 class="education-institution">Belarusian State University</h3>
+                    <p class="education-faculty">Faculty of Mechanics and Mathematics</p>
+                    <p class="education-specialty">Specialty: Mathematics (Scientific and Design Activities)</p>
+                </div>
+            </section>
+
+            <section id="languages" class="section">
+                <h2 class="section-title">Languages</h2>
+                <ul class="languages-list">
+                    <li class="languages-item">
+                        <span class="language-name">Russian:</span>
+                        <span class="language-level">Native</span>
+                    </li>
+                    <li class="languages-item">
+                        <span class="language-name">Belarusian</span>
+                    </li>
+                    <li class="languages-item">
+                        <span class="language-name">English:</span>
+                        <span class="language-level">A2 </span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <a href="https://github.com/ad003n" class="github-link" target="_blank">
+                GitHub
+            </a>
+            <span class="year">2025</span>
+            <a href="https://rs.school/courses/javascript-ru" target="_blank">
+                <img src="https://raw.githubusercontent.com/rolling-scopes-school/rs.school-site/758a8c4678563a5d0560d74b354b34c69428cbfc/docs/images/rs_school_js.svg" 
+                     alt="RS School" 
+                     width="100">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
