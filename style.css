@@ -91,6 +91,25 @@ overflow-x: auto;
 color: #f4f4f4;
 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+.skills-list {
+display: flex;
+justify-content: space-around;
+}
+
+.skills-item {
+text-align: center;
+}
+
+.github-link {
+text-decoration: none;
+color: #fff;
+font-weight: 500;
+}
+
+.rss-link {
+display: inline-block;
+margin-top: 10px;
+}
 
 .footer {
     background-color: #1a1a1a;
