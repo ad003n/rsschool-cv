@@ -10,31 +10,88 @@ body{
     color: #fff;
     padding: 20px 10px;
 }
+
+.container {
+width: 80%;
+margin: auto;
+}
+
+
 .navigation{
     padding: 5px 0;
-}
-.navigation-list{
     text-align: center;
 }
-.navigation-link{
-    color: #fff;
-    font-weight: 500;
-    font-size: 0.9rem;
-    padding: 5px 10px;
-    border-radius: 4px;
+.navigation-list{
+    list-style: none;
+padding: 0;
+}
+
+.navigation-link {
+text-decoration: none;
+color: #fff;
+font-weight: 500;
+/*transition: color 0.3s;*/
 }
 
 .navigation-item{
     display: inline-block;
-    margin: 0 10 px;
+    margin: 0 15 px;
 }
+
+.main {
+padding: 30px 0;
+}
+
+
 .section{
 background-color: #fff;
 margin: 20px 10px;
 padding: 25px;
 border-radius: 10px;
-
 }
+
+.section-title {
+margin: 0;
+font-size: 1.5em;
+}
+
+.profile-section {
+display: flex;
+align-items: center;
+}
+
+.profile-content {
+flex: 1;
+}
+
+.profile-photo {
+border-radius: 50%;
+margin-left: 20px;
+}
+
+.contacts-list, .strengths-list, .skills-list, .languages-list, .courses-list {
+list-style: none;
+padding: 0;
+}
+
+.contacts-item, .strengths-item, .skills-item, .languages-item, .courses-item {
+margin: 5px 0;
+}
+
+.contact-label {
+font-weight: bold;
+}
+
+.code-block {
+background-color: #1f1f1f;
+border: 1px solid #100f0f;
+padding: 10px;
+border-radius: 5px;
+overflow-x: auto;
+color: #f4f4f4;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 .footer {
     background-color: #1a1a1a;
     color: #fff;
