@@ -78,15 +78,21 @@ font-size: 1.5em;
 
 .profile-section {
 display: flex;
+flex-direction: row-reverse; /* Фото справа, текст слева */
 align-items: center;
-flex-direction: column;
-text-align: center;
-gap: 25px;
-
+gap: 40px;
+text-align: left;
 }
 
 .profile-content {
 flex: 1;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .profile-photo {
@@ -94,6 +100,9 @@ border-radius: 50%;
 margin-left: 20px;
 object-fit: cover;
 box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+width: clamp(120px, 25vw, 200px); 
+height: auto; 
+aspect-ratio: 1/1;
 }
 
 .contacts-list, .strengths-list, .skills-list, .languages-list, .courses-list {
@@ -104,6 +113,28 @@ padding: 0;
 .contacts-item, .strengths-item, .skills-item, .languages-item, .courses-item {
 margin: 5px 0;
 }
+
+.strengths-item,
+.languages-item,
+.courses-item {
+    position: relative;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.strengths-item::before,
+.languages-item::before,
+.courses-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #16171a; 
+}
+
 
 .contact-label {
 font-weight: bold;
@@ -129,6 +160,20 @@ scrollbar-color: rgba(255,255,255,0.2) transparent;
         border-radius: 4px;
     }    
 }
+
+.project-link {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid #1a1a1a;
+}
+
 
 .skills-item {
 position: relative;
@@ -161,5 +206,30 @@ margin-top: 10px;
     background-color: #1a1a1a;
     color: #fff;
     padding: 20px 10px;
-    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-content a:last-child {
+    margin-left: auto; 
 }
