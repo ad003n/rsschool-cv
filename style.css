@@ -39,7 +39,7 @@ padding: 0 15px;
 .navigation-list{
     list-style: none;
     padding: 0;
-    display: inline-block; /* Элементы в одну строку */
+    display: inline-block; 
     min-width: 100%; 
 }
 
@@ -78,7 +78,7 @@ font-size: 1.5em;
 
 .profile-section {
 display: flex;
-flex-direction: row-reverse; /* Фото справа, текст слева */
+flex-direction: row-reverse; 
 align-items: center;
 gap: 40px;
 text-align: left;
@@ -139,6 +139,57 @@ margin: 5px 0;
 .contact-label {
 font-weight: bold;
 }
+.contact-link {
+    color: #211f1f; 
+}
+.contact-link:hover {
+    color: #696669; 
+}
+
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .contacts-item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .contact-label {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 5px;
+    }
+.contact-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-label {
+        font-size: 0.9rem;
+    }
+    
+    .contact-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
 
 .code-block {
 background-color: #1f1f1f;
@@ -173,7 +224,11 @@ scrollbar-color: rgba(255,255,255,0.2) transparent;
     transition: all 0.3s ease;
     border: 2px solid #1a1a1a;
 }
-
+.project-link:hover {
+    background-color: #8a8a8a; 
+    color: rgb(0, 0, 0); 
+    border: 2px solid #6a6969;
+}
 
 .skills-item {
 position: relative;
