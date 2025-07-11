@@ -2,7 +2,9 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-   
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;   
 }
 
 .header{
@@ -13,29 +15,47 @@ body{
 
 .container {
 width: 80%;
-margin: auto;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 15px;
 }
 
 
 .navigation{
     padding: 5px 0;
     text-align: center;
+
+    overflow-x: auto;      
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(66, 68, 73, 0.7) transparent;
+    white-space: nowrap;   
+    -webkit-overflow-scrolling: touch;
 }
+.navigation::-webkit-scrollbar {
+    height: 0;
+    background: transparent;
+}
+
 .navigation-list{
     list-style: none;
-padding: 0;
+    padding: 0;
+    display: inline-block; /* Элементы в одну строку */
+    min-width: 100%; 
 }
 
 .navigation-link {
 text-decoration: none;
 color: #fff;
 font-weight: 500;
-/*transition: color 0.3s;*/
+font-size: 0.9rem;
+padding: 5px 10px;
+border-radius: 4px;
+
 }
 
 .navigation-item{
     display: inline-block;
-    margin: 0 15 px;
+    margin: 0 15px;
 }
 
 .main {
@@ -48,6 +68,7 @@ background-color: #fff;
 margin: 20px 10px;
 padding: 25px;
 border-radius: 10px;
+box-shadow: 0 2px 15px rgba(0,0,0,0.08);
 }
 
 .section-title {
@@ -58,6 +79,10 @@ font-size: 1.5em;
 .profile-section {
 display: flex;
 align-items: center;
+flex-direction: column;
+text-align: center;
+gap: 25px;
+
 }
 
 .profile-content {
@@ -67,6 +92,8 @@ flex: 1;
 .profile-photo {
 border-radius: 50%;
 margin-left: 20px;
+object-fit: cover;
+box-shadow: 0 3px 15px rgba(0,0,0,0.2);
 }
 
 .contacts-list, .strengths-list, .skills-list, .languages-list, .courses-list {
@@ -90,7 +117,26 @@ border-radius: 5px;
 overflow-x: auto;
 color: #f4f4f4;
 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+font-family: 'Fira Code', monospace;
+scrollbar-width: thin;
+scrollbar-color: rgba(255,255,255,0.2) transparent;
+    &::-webkit-scrollbar {
+        height: 6px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.2);
+        border-radius: 4px;
+    }    
 }
+
+.skills-item {
+position: relative;
+padding-left: 20px;
+}
+
+
+
 .skills-list {
 display: flex;
 justify-content: space-around;
