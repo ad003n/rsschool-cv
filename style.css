@@ -134,8 +134,28 @@ margin: 5px 0;
     border-radius: 50%;
     background-color: #16171a; 
 }
+.skills-item {
+    position: relative;
+    padding-left: 20px;
+    margin: 10px 0;
+    text-align: left;
+}
+.skills-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #16171a;
+}
 
 
+.skills-item {
+    display: list-item; 
+}
 .contact-label {
 font-weight: bold;
 }
@@ -236,14 +256,35 @@ padding-left: 20px;
 }
 
 
+@media (min-width: 769px) {
+    .skills-list {
+        display: flex;
+        flex-wrap: nowrap; 
+        justify-content: flex-start; 
+        gap: 30px; 
+        overflow-x: auto; 
+        padding-bottom: 10px; 
+    }
+    
+    .skills-item {
+        flex: 0 0 auto; 
+        margin-bottom: 0; 
+        white-space: nowrap; 
+    }
+} 
 
-.skills-list {
-display: flex;
-justify-content: space-around;
-}
-
-.skills-item {
-text-align: center;
+@media (max-width: 768px) {
+    .skills-list {
+        display: block;
+        padding-left: 25px; 
+    }
+    
+    .skills-item {
+        width: 100%;
+        text-align: left;
+        padding-left: 25px;
+        margin: 15px 0; 
+    }
 }
 
 .github-link {
